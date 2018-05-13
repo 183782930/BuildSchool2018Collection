@@ -1,0 +1,107 @@
+body {
+    font-family: Helvetica Neue, Helvetica, Arial, \\6587\6CC9\9A5B\6B63\9ED1, WenQuanYi Zen Hei, Hiragino Sans GB, \\5137\9ED1 Pro, LiHei Pro, Heiti TC, \\5FAE\8EDF\6B63\9ED1\9AD4, Microsoft JhengHei UI, Microsoft JhengHei, sans-serif;
+    
+}
+.context{
+    background-color: #efefef
+}
+li a.nav-link,
+li.list-inline-item a {
+    font-size: 12px;
+    color: white;
+}
+
+li.nav-item {
+    color: white;
+}
+
+a.nav-link i {
+    font-size: 15px;
+}
+
+ol.carousel-indicators li {
+    background-color: gray;
+}
+
+.W110H90 {
+    width: 96px;
+    height: 90px;
+}
+.W200H240{
+    width: 185px;
+    height: 240px;
+}
+.W200H110{
+    width: 187px;
+    height: 110px;
+}
+.W83H76{
+    width: 83px;
+    height: 76px;
+}
+.font-bg {
+    font-size: 15px;
+}
+
+.classification {
+    border-color: #bababa;
+    width:112px; 
+    height: 159px;
+}
+.orange-color{
+    color: #ff5722;
+}
+.bg-orange-light{
+    background-color: rgba(255, 87, 34, 0.35);
+}
+.bg-orange-color{
+    background-color: #ff5722;
+}
+a.text-dark,a.text-danger{
+    text-decoration: none;
+}
+.hot-product-font-size{
+    font-size: 14px;
+}
+.hot-product-font-size-sm{
+    font-size: 7px;
+    color: gray;
+}
+.W160{
+    width: 160px;
+}
+.W170{
+    width: 160px;
+}
+.dont-hover-white:hover{
+    text-decoration: none;
+}
+.dont-hover:hover{
+    text-decoration: none;
+    color: #ff5722;
+}
+.float-shadow:hover{
+    position: relative;
+    bottom: 1px;
+    box-shadow:  1px 1px 10px #c9c9c9;
+}
+.footer-font-sm,.footer-font-sm a{
+    font-size: 12px;
+    color: gray;
+}
+.footer-font-sm a:hover{
+    text-decoration: none;
+    color: #ff5722;
+}
+.btn-Custom{
+    background:rgba(0,0,0,0.4);
+    position: relative;
+    bottom:30px;
+    
+}
+.btn-Custom:hover{
+    background:rgba(0,0,0,0.7);
+}
+.font-white{
+    color: white;
+}

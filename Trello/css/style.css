@@ -1,0 +1,79 @@
+body {
+            font-family: Microsoft JhengHei;
+        }
+        h5{
+            font-size: 16px;
+        }
+        h5,
+        .small,
+        label.form-check-label,
+        p,
+        a {
+            color: gray;
+        }
+        
+        strong {
+            color: black;
+        }
+
+        p strong {
+            font-size: 20px;
+        }
+
+        .container {
+            padding-left: 30px;
+        }
+
+        .container p {
+            margin: 0px;
+        }
+
+        .small a,
+        p a {
+            text-decoration: underline
+        }
+
+        .small a:hover,
+        p a:hover {
+            color: black;
+        }
+
+        .fa-plus {
+            color: #555
+        }
+
+        .btn-default:hover {
+            background-color: #c6c6c6
+        }
+
+        .circle {
+            border-radius: 99em;
+        }
+
+        label.form-check-label {
+            text-decoration: underline;
+        }
+
+        label.form-check-label:hover {
+            color: #444;
+        }
+
+        button {
+            color: #9d9d9d;
+        }
+
+        .col-4 button {
+            width: 100%;
+            text-align: left;
+        }
+
+        hr {
+            margin: 5px 0px;
+        }
+        .modal-body{
+            background-color: #f2f2f2;
+        }
+        .offset-1 button{
+            background-color: #f2f2f2;
+            border-color: #f2f2f2;
+        }

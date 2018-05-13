@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>Trello</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="apple-touch-icon" href="">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <!-- ICON CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- 卡片 -->
+    <div class="card " style="width: 25%">
+        <div class="card-body">
+            <h5 class="card-title">Bootstrap練習</h5>
+            <p class="card-text">每一次的嘗試都會成為我的經驗</p>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                新增一張卡片
+            </button>
+        </div>
+    </div>
+
+
+    <!-- 互動視窗 -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <!-- 標題 -->
+                    <div class="header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h5><i class="fas fa-id-card"></i> #9653</h5>
+                        <div class="container mb-2">
+                            <p><strong>練習Bootstrap的使用</strong></p>
+                            <p class="small">位於列表 <a href="">練習中/作業中 </a>&nbsp;&nbsp;&nbsp;<i class="fas fa-eye"></i></p>
+                        </div>
+                    </div>
+                    <!-- 內容 -->
+                    <div class="content">
+                        <div class="container ">
+                            <div class="row">
+                                <!-- 左邊 -->
+                                <div class="col-8">
+                                    <div class="row mb-1">
+                                        <div class="col-3 small">成員</div>
+                                        <div class="col-3 small">標籤</div>
+                                        <div class="col-3 small">到期日</div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col-3 small">
+                                            <button type="button " class="btn btn-default btn-sm circle">
+                                            圖
+                                        </button>
+                                            <button type="button " class="btn btn-default btn-sm ">
+                                            <i class="fas fa-plus"></i>
+                                        </button>
+                                        </div>
+                                        <div class="col-3 small">
+                                            <button type="button " class="btn btn-success btn-sm ">
+                                        C#&nbsp;&nbsp;
+                                        </button>
+                                            <button type="button " class="btn btn-default btn-sm ">
+                                            <i class="fas fa-plus"></i>
+                                        </button>
+                                        </div>
+                                        <div class="col-3 small">
+                                            <button type="button " class="btn btn-default btn-sm ">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                                <label class="form-check-label" for="gridCheck">
+                                                    下星期二中午12點00分
+                                                </label>
+                                            </div>
+                                        </button>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col">
+                                            <h5><i class="fas fa-align-left" style="margin-left: -30px;"></i>&nbsp;&nbsp;<strong>描述</strong></h5>
+                                            <textarea class="form-control mt-3" id="exampleFormControlTextarea1" rows="3" placeholder="新增更詳細的敘述..." style="background-color: #ebebeb"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col">
+                                            <h5><i class="fas fa-paperclip" style="margin-left: -30px;"></i>&nbsp;&nbsp;<strong>附件</strong></h5>
+                                            <table></table>
+                                            <div style="border: 2px solid #c6c6c6;height: 65px;border-style: dashed;">
+                                                <p class="text-center " style="line-height: 60px">請拖放或<a href="#">選擇檔案</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <h5><i class="fas fa-check-square" style="margin-left: -30px;"></i>&nbsp;&nbsp;<strong>代辦清單</strong></h5>
+                                                </div>
+                                                <div class="col text-right">
+                                                    <p><a href="#" class="small">刪除...</a></p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="row">
+                                                        <div class="col-1">
+                                                            <p class="small">0%</p>
+                                                        </div>
+                                                        <div class="col">
+                                                            <div class="progress mt-1" style="height: 10px; background-color: #d9d9d9">
+                                                                <div class="progress-bar " role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col offset-1">
+                                                            <button type="button " class="btn btn-light btn-sm mt-2 btn-block">
+                                                                <p class="text-left" style="overflow-y: scroll;">新增項目</p>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col">
+                                            <h5><i class="fas fa-comment" style="margin-left: -30px;"></i>&nbsp;&nbsp;<strong>新增評論</strong></h5>
+                                            <textarea class="form-control mt-3" id="exampleFormControlTextarea1" rows="3" placeholder="撰寫評論" style="box-shadow:2px 2px #f7f7f7;"></textarea>
+                                            <button type="button" class="btn btn-light btn-sm mb-2 mt-2" disabled>儲存</button>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <h5><i class="fas fa-list-ul" style="margin-left: -30px;"></i>&nbsp;&nbsp;<strong>活動</strong></h5>
+                                                </div>
+                                                <div class="col text-right">
+                                                    <p><a href="#" class="small">隱藏詳情</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 右邊 -->
+                                <div class="col-4">
+                                    <h5><strong>新增</strong></h5>
+                                    <button type="button " class="btn btn-default btn-sm mb-2">
+                                    <i class="fas fa-user" ></i>
+                                    <strong class="">&nbsp;&nbsp;成員</strong>
+                                </button>
+                                    <button type="button " class="btn btn-default btn-sm mb-2">
+                                    <i class="fas fa-tag"></i>
+                                    <strong class="">&nbsp;&nbsp;標籤</strong>
+                                </button>
+                                    <button type="button " class="btn btn-default btn-sm mb-2">
+                                    <i class="fas fa-check-square"></i>
+                                    <strong class="">&nbsp;&nbsp;代辦清單</strong>
+                                </button>
+                                    <button type="button " class="btn btn-default btn-sm mb-2">
+                                    <i class="fas fa-clock"></i>
+                                    <strong class="">&nbsp;&nbsp;到期日</strong>
+                                </button>
+                                    <button type="button " class="btn btn-default btn-sm mb-2">
+                                    <i class="fas fa-paperclip"></i>
+                                    <strong class="">&nbsp;&nbsp;附件</strong>
+                                </button>
+                                    <h5><strong>強化功能</strong></h5>
+                                    <button type="button " class="btn btn-default btn-sm mb-2">
+                                    <i class="fab fa-google-drive"></i>
+                                    <strong class="">&nbsp;&nbsp;Goole雲端硬碟</strong>
+                                </button>
+                                    <h5><strong>動作</strong></h5>
+                                    <button type="button " class="btn btn-default btn-sm mb-2">
+                                    <i class="fas fa-arrow-right"></i>
+                                    <strong class="">&nbsp;&nbsp;移動</strong>
+                                </button>
+                                    <button type="button " class="btn btn-default btn-sm mb-2">
+                                    <i class="fas fa-clone"></i>
+                                    <strong class="">&nbsp;&nbsp;複製</strong>
+                                </button>
+                                    <button type="button " class="btn btn-default btn-sm mb-2">
+                                    <i class="fas fa-eye"></i>
+                                    <strong class="">&nbsp;&nbsp;追蹤</strong>
+                                </button>
+                                    <hr/>
+                                    <button type="button " class="btn btn-default btn-sm mb-2">
+                                    <i class="fas fa-box"></i>
+                                    <strong class="">&nbsp;&nbsp;封存</strong>
+                                </button>
+                                    <button type="button" class="btn btn-light btn-sm mb-2" style="text-decoration: underline;color: gray;">
+                                    分享及其他...
+                                </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Coding End -->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>
