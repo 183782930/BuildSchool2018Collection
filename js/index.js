@@ -23,3 +23,8 @@ $("#twitch").on("click",function(){
     route = "Twitch/List_Twith.html";
     $("#PartView").html(routeString(route,"100%"));
 });
+
+$("#calender").on("click",function(){
+    route = "Calendar/List_Calendar.html";
+    $("#PartView").html(routeString(route,"100%"));
+});
