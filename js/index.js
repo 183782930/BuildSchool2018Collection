@@ -6,12 +6,12 @@ function routeString(route,height)
 
 $("#shoppe").on("click",function(){
     route = "Shoppe/List_Shoppe.html";
-    $("#PartView").html(routeString(route,"2800"));
+    $("#PartView").html(routeString(route,"2600"));
 });
 
 $("#trello").on("click",function(){
     route = "Trello/List_Trello.html";
-    $("#PartView").html(routeString(route,"100%"));
+    $("#PartView").html(routeString(route,"600"));
 });
 
 $("#gianthello").on("click",function(){
@@ -21,10 +21,10 @@ $("#gianthello").on("click",function(){
 
 $("#twitch").on("click",function(){
     route = "Twitch/List_Twith.html";
-    $("#PartView").html(routeString(route,"100%"));
+    $("#PartView").html(routeString(route,"600"));
 });
 
 $("#calender").on("click",function(){
     route = "Calendar/List_Calendar.html";
-    $("#PartView").html(routeString(route,"100%"));
+    $("#PartView").html(routeString(route,"600"));
 });
