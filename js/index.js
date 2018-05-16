@@ -28,3 +28,8 @@ $("#calender").on("click",function(){
     route = "Calendar/List_Calendar.html";
     $("#PartView").html(routeString(route,"600"));
 });
+
+$("#slot").on("click",function(){
+    route = "Slot/List_Slot.html";
+    $("#PartView").html(routeString(route,"600"));
+});
