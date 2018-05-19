@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>slot</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
+        crossorigin="anonymous">
+    <style>
+        body{
+            background-color: #EFFCFC;
+        }
+        img {
+            box-sizing: border-box;
+            width: 100%;
+            border: 1px solid black;
+            transition: all .3s;
+            /*0.3秒後恢復到原本css的狀態 */
+        }
+
+        img.active {
+            border: 2px solid red;
+            box-shadow: 0px 0px 25px red;
+            transition: all 0s;
+        }
+
+        img.active.last {
+            background-color: red;
+        }
+
+        .card-span {
+            background-color: black;
+            color: white;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .card>img {
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid text-center">
+        <div class="row">
+            <div class="col">
+                <div class="row mb-4 mt-2 row-with-gap">
+                    <div class="col">
+                        <img id="i1" src="images/icons8-pear-48.png">
+                    </div>
+                    <div class="col">
+                        <img id="i2" src="images/icons8-77-filled-50.png">
+                    </div>
+                    <div class="col">
+                        <img id="i3" src="images/icons8-cherry-48.png">
+                    </div>
+                    <div class="col">
+                        <img id="i4" src="images/icons8-pear-48.png">
+                    </div>
+                    <div class="col">
+                        <img id="i5" src="images/icons8-grapes-48.png">
+                    </div>
+                    <div class="col">
+                        <img id="i6" src="images/icons8-watermelon-48.png">
+                    </div>
+                    <div class="col">
+                        <img id="i7" src="images/icons8-cherry-48.png">
+                    </div>
+                    <div class="col">
+                        <img id="i8" src="images/icons8-pineapple-48.png">
+                    </div>
+                    <div class="col">
+                        <img id="i9" src="images/icons8-pear-48.png">
+                    </div>
+                    <div class="col">
+                        <img id="i10" src="images/icons8-grapes-48.png">
+                    </div>
+                    <div class="col">
+                        <img id="i11" src="images/icons8-cherry-48.png">
+                    </div>
+                    <div class="col">
+                        <img id="i12" src="images/icons8-christmas-star-48.png">
+                    </div>
+                </div>
+                <div class="row mb-4">
+                    <div class="col">
+                        <img id="i32" src="images/icons8-peach-48.png">
+                    </div>
+                    <div class="col-10">
+                    </div>
+                    <div class="col">
+                        <img id="i13" src="images/icons8-peach-48.png">
+                    </div>
+                </div>
+                <div class="row mb-4">
+                    <div class="col">
+                        <img id="i31" src="images/icons8-pineapple-48.png">
+                    </div>
+                    <div class="col-10">
+                        <form>
+                            <div class="form-row mt-2">
+                                <div class="col input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">得分</span>
+                                    </div>
+                                    <input type="text" class="form-control text-right" id="source" readonly>
+                                </div>
+                                <div class="col input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">總金額</span>
+                                    </div>
+                                    <input type="text" class="form-control text-right" id="totalAmount" readonly>
+                                </div>
+                                <div class="col input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">押注</span>
+                                    </div>
+                                    <input type="text" class="form-control text-right" id="bet" readonly>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col">
+                        <img id="i14" src="images/icons8-cherry-48.png">
+                    </div>
+                </div>
+                <div class="row mb-4">
+                    <div class="col">
+                        <img id="i30" src="images/icons8-cherry-48.png">
+                    </div>
+                    <div class="col-10">
+                        <button type="button" name="" id="start" class="btn btn-primary btn-block">
+                            Start!
+                        </button>
+                    </div>
+                    <div class="col">
+                        <img id="i15" src="images/icons8-watermelon-48.png">
+                    </div>
+                </div>
+                <div class="row mb-4">
+                    <div class="col">
+                        <img id="i29" src="images/icons8-grapes-48.png">
+                    </div>
+                    <div class="col-10"></div>
+                    <div class="col">
+                        <img id="i16" src="images/icons8-pear-48.png">
+                    </div>
+                </div>
+                <div class="row mb-4">
+                    <div class="col">
+                        <img id="i28" src="images/icons8-christmas-star-48.png">
+                    </div>
+                    <div class="col">
+                        <img id="i27" src="images/icons8-peach-48.png">
+                    </div>
+                    <div class="col">
+                        <img id="i26" src="images/icons8-pear-48.png">
+                    </div>
+                    <div class="col">
+                        <img id="i25" src="images/icons8-cherry-48.png">
+                    </div>
+                    <div class="col">
+                        <img id="i24" src="images/icons8-pineapple-48.png">
+                    </div>
+                    <div class="col">
+                        <img id="i23" src="images/icons8-grapes-48.png">
+                    </div>
+                    <div class="col">
+                        <img id="i22" src="images/icons8-watermelon-48.png">
+                    </div>
+                    <div class="col">
+                        <img id="i21" src="images/icons8-pear-48.png">
+                    </div>
+                    <div class="col">
+                        <img id="i20" src="images/icons8-pineapple-48.png">
+                    </div>
+                    <div class="col">
+                        <img id="i19" src="images/icons8-77-filled-50.png">
+                    </div>
+                    <div class="col">
+                        <img id="i18" src="images/icons8-watermelon-48.png">
+                    </div>
+                    <div class="col">
+                        <img id="i17" src="images/icons8-peach-48.png">
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 mt-2">
+                <div class="alert alert-primary" role="alert">
+                    <strong>押注區</strong>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-xl col-lg-6">
+                        <div class="card mb-1">
+                            <span class="card-span mb-1 bg-warning">100</span>
+                            <img class="card-img-top mb-1" src="images/icons8-77-filled-50.png">
+                            <span class="card-span" id="b1">0</span>
+                        </div>
+                        <button type="button" class="btn btn-primary btn-block btn-bet" id="btn1">押</button>
+                    </div>
+                    <div class="col-xl col-lg-6">
+                        <div class="card mb-1">
+                            <span class="card-span mb-1 bg-warning">50</span>
+                            <img class="card-img-top mb-1" src="images/icons8-christmas-star-48.png">
+                            <span class="card-span" id="b2">0</span>
+                        </div>
+                        <button type="button" class="btn btn-primary btn-block btn-bet" id="btn2">押</button>
+                    </div>
+                    <div class="col-xl col-lg-6">
+                        <div class="card mb-1">
+                            <span class="card-span mb-1 bg-warning">30</span>
+                            <img class="card-img-top mb-1" src="images/icons8-pineapple-48.png">
+                            <span class="card-span" id="b3">0</span>
+                        </div>
+                        <button type="button" class="btn btn-primary btn-block btn-bet" id="btn3">押</button>
+                    </div>
+                    <div class="col-xl col-lg-6">
+                        <div class="card mb-1">
+                            <span class="card-span mb-1 bg-warning">30</span>
+                            <img class="card-img-top mb-1" src="images/icons8-watermelon-48.png">
+                            <span class="card-span" id="b4">0</span>
+                        </div>
+                        <button type="button" class="btn btn-primary btn-block btn-bet" id="btn4">押</button>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-xl col-lg-6">
+                        <div class="card mb-1">
+                            <span class="card-span mb-1 bg-warning">30</span>
+                            <img class="card-img-top mb-1" src="images/icons8-grapes-48.png">
+                            <span class="card-span" id="b5">0</span>
+                        </div>
+                        <button type="button" class="btn btn-primary btn-block btn-bet" id="btn5">押</button>
+                    </div>
+                    <div class="col-xl col-lg-6">
+                        <div class="card mb-1">
+                            <span class="card-span mb-1 bg-warning">30</span>
+                            <img class="card-img-top mb-1" src="images/icons8-peach-48.png">
+                            <span class="card-span" id="b6">0</span>
+                        </div>
+                        <button type="button" class="btn btn-primary btn-block btn-bet" id="btn6">押</button>
+                    </div>
+                    <div class="col-xl col-lg-6">
+                        <div class="card mb-1">
+                            <span class="card-span mb-1 bg-warning">20</span>
+                            <img class="card-img-top mb-1" src="images/icons8-pear-48.png">
+                            <span class="card-span" id="b7">0</span>
+                        </div>
+                        <button type="button" class="btn btn-primary btn-block btn-bet" id="btn7">押</button>
+                    </div>
+                    <div class="col-xl col-lg-6">
+                        <div class="card mb-1">
+                            <span class="card-span mb-1 bg-warning">20</span>
+                            <img class="card-img-top mb-1" src="images/icons8-cherry-48.png">
+                            <span class="card-span" id="b8">0</span>
+                        </div>
+                        <button type="button" class="btn btn-primary btn-block btn-bet" id="btn8">押</button>
+                    </div>
+                </div>
+                <div class="row mb-2">
+                    <div class="col">
+                        <button type="button" class="btn btn-primary btn-block" id="alladd">全加</button>
+                    </div>
+                    <div class="col">
+                        <button type="button" class="btn btn-primary btn-block" id="allless">全減</button>
+                    </div>
+                    <div class="col">
+                        <button type="button" class="btn btn-danger btn-block" id="alldelete">清除</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="js/slot.js"></script>
+</body>
+
+</html>

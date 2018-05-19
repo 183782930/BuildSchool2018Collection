@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>預估交通費用計算</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        .mapstyle{
+            width: 700px;
+            height: 500px;
+            border: 1px solid #000000;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container mt-2">
+    <div class="row">
+        <div class="col">
+            <div id="map" class="mapstyle">
+            </div>
+        </div>
+        <div class="col">
+            <p>起始點經緯度: <span id="origin">0</span></p>
+            <p>終點經緯度: <span id="destination">0</span></p>
+            <div class="row">
+                <div class="col">
+                    <button type="button" class="btn btn-primary btn-block" id="drive">開車</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-primary btn-block" id="taxi">計程車</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-primary btn-block" id="transportation">運輸工具</button>
+                </div>
+            </div>
+            <div id="print" class="alert alert-success mt-2 pb-0" role="alert" style="font-size:20px;">
+                &nbsp;
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDkEovGWYwguJuVhij1jBy-2ceoqv3AEQE&callback=initMap"
+    async defer></script>
+    <script src="js/TransportationCostCalculation.js"></script>
+  </body>
+</html>

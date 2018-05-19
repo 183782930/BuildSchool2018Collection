@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <title>gaint_hello</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="apple-touch-icon" href="">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--Icon CSS-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
+    <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <!-- Start coding here -->
+    <div class="header border-bottom  border-dark">
+        <div class="container ">
+            <nav class="navbar navbar-light justify-content-between p-0">
+                <a class="navbar-brand">Gaint Hello</a>
+                <form class="form-inline ">
+                    <a class="nav-link" href="#">1000Coin</a>
+                    <div class="border-left border-dark">
+                        <ul class="nav justify-content-end ">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Buy Coins</a>
+                            </li>
+                            <li class="nav-item mt-2">
+                                |
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Account</a>
+                            </li>
+                            <li class="nav-item mt-2">
+                                |
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Apps</a>
+                            </li>
+                            <li class="nav-item mt-2">
+                                |
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Pages</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <input class="form-control " type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+            </nav>
+        </div>
+    </div>
+    <div class="context">
+        <div class="container">
+            <div class="row mb-3">
+                <div class="col-3 mt-2 ">
+                    <i class="fas fa-id-card"></i> Raodrigo Soares
+                </div>
+                <div class="col">
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="mail-tab" data-toggle="tab" href="#mail" role="tab" aria-controls="mail" aria-selected="false">Mail</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="product-tab" data-toggle="tab" href="#product" role="tab" aria-controls="product" aria-selected="false">Product</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="gits-tab" data-toggle="tab" href="#gits" role="tab" aria-controls="gits" aria-selected="false">Gits</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <div class="border border-dark rounded px-3 mb-3">
+                        <p>What are you up to?</p>
+                    </div>
+                    <div class="pl-3 border border-dark rounded mb-3">
+                        <p class="mb-1">
+                            <i class="fas fa-envelope"></i> 1 new message
+                        </p>
+                        <p class="mb-1">
+                            <i class="fas fa-camera-retro"></i> 1 new photo comment
+                        </p>
+                        <p class="mb-1">
+                            <i class="fas fa-gift"></i> 20 new gift
+                        </p>
+                    </div>
+                    <div class="clearfix">
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleInputName">Email address</label>
+                                <input type="text" class="form-control" id="exampleInputName" placeholder="Friend's name">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="exampleInputEmail" placeholder="Friend's email">
+                            </div>
+                            <button type="submit" class="btn btn-sm btn-secondary w-50 float-right">Invite</button>
+                        </form>
+                    </div>
+                    <div class="clearfix">
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleInputAccept">Accept Invite</label>
+                                <input type="text" class="form-control" id="exampleInputAccept" placeholder="XXX-XXX-XXX">
+                            </div>
+                            <button type="submit" class="btn btn-sm btn-secondary w-50 float-right">Enter Code</button>
+                        </form>
+                    </div>
+                    <div class="clearfix">
+                        <p>Invites Sent</p>
+                        <div class="alert alert-light px-1 py-1 mb-1 border border-dark rounded" role="alert">
+                            John
+                            <div class="float-right">yesterday</div>
+                        </div>
+                        <div class="alert alert-light px-1 py-1 mb-1 border border-dark rounded" role="alert">
+                            Willy
+                            <div class="float-right">yesterday</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <h6>Latest</h6>
+                            <div class="media mb-5">
+                                <img class="mr-3" src="http://placehold.it/50x50" alt="假圖">
+                                <div class="media-body">
+                                    <a href="#">rrr</a> received a git thom a friend
+                                    <div class="media mt-3">
+                                        <img class="" src="http://placehold.it/75x75" alt="假圖">
+                                    </div>
+                                    <p class="mb-2">give git</p>
+                                    <div class="media">
+                                        <img class="mx-4" src="http://placehold.it/50x50" alt="假圖">
+                                        <div class="media-body border border-dark rounded px-3 py-2">
+                                            <strong>mr</strong> 3hours ago
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit repudiandae alias enim quia quod, corporis deleniti mollitia sint ea.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="media mb-5">
+                                <img class="mr-3" src="http://placehold.it/50x50" alt="假圖">
+                                <div class="media-body">
+                                    <div class="media-body border border-dark rounded px-3 py-2">
+                                        <strong>mr</strong> 3hours ago
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit repudiandae alias enim quia quod, corporis deleniti mollitia sint ea.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="media mb-5">
+                                <img class="mr-3" src="http://placehold.it/50x50" alt="假圖">
+                                <div class="media-body">
+                                    <div class="media-body border border-dark rounded px-3 py-2">
+                                        <strong>mr</strong> 3hours ago
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit repudiandae alias enim quia quod, corporis deleniti mollitia sint ea.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="media mb-5">
+                                <img class="mr-3" src="http://placehold.it/50x50" alt="假圖">
+                                <div class="media-body">
+                                    <div class="media-body px-3 py-2 clearfix">
+                                        <a href="#">rrr</a> received a git thom a friend
+                                        <br>
+                                        <img class="float-left mr-2" src="http://placehold.it/80x80" alt="">
+                                        <img class="float-left mr-2" src="http://placehold.it/80x80" alt="">
+                                        <img class="float-left mr-2" src="http://placehold.it/80x80" alt="">
+                                        <img class="float-left mr-2" src="http://placehold.it/80x80" alt="">
+                                        <img class="float-left mr-2" src="http://placehold.it/80x80" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                            <div class="media mb-5">
+                                <img class="mr-3" src="http://placehold.it/50x50" alt="假圖">
+                                <div class="media-body">
+                                    <div class="media-body border border-dark rounded px-3 py-2">
+                                        <strong>mr</strong> 3hours ago
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit repudiandae alias enim quia quod, corporis deleniti mollitia sint ea.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="media mb-5">
+                                <img class="mr-3" src="http://placehold.it/50x50" alt="假圖">
+                                <div class="media-body">
+                                    <div class="media-body border border-dark rounded px-3 py-2">
+                                        <strong>mr</strong> 3hours ago
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit repudiandae alias enim quia quod, corporis deleniti mollitia sint ea.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="mail" role="tabpanel" aria-labelledby="mail-tab">
+                            <div class="media mb-5">
+                                <img class="mr-3" src="http://placehold.it/50x50" alt="假圖">
+                                <div class="media-body">
+                                    <div class="media-body px-3 py-2 clearfix">
+                                        <a href="#">rrr</a> received a git thom a friend
+                                        <br>
+                                        <img class="float-left mr-2" src="http://placehold.it/80x80" alt="">
+                                        <img class="float-left mr-2" src="http://placehold.it/80x80" alt="">
+                                        <img class="float-left mr-2" src="http://placehold.it/80x80" alt="">
+                                        <img class="float-left mr-2" src="http://placehold.it/80x80" alt="">
+                                        <img class="float-left mr-2" src="http://placehold.it/80x80" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <img class="mb-3 clearfix" src="http://placehold.it/240x150" alt="">
+                    <div>
+                        <p>Friends</p>
+                        <div class="mb-2 clearfix">
+                            <img class="float-left mr-2" src="http://placehold.it/40x40" alt="">
+                            <img class="float-left mr-2" src="http://placehold.it/40x40" alt="">
+                            <img class="float-left mr-2" src="http://placehold.it/40x40" alt="">
+                            <img class="float-left mr-2" src="http://placehold.it/40x40" alt="">
+                            <img class="float-left mr-2" src="http://placehold.it/40x40" alt="">
+                        </div>
+                        <div class="mb-2 clearfix">
+                            <img class="float-left mr-2" src="http://placehold.it/40x40" alt="">
+                            <img class="float-left mr-2" src="http://placehold.it/40x40" alt="">
+                            <img class="float-left mr-2" src="http://placehold.it/40x40" alt="">
+                            <img class="float-left mr-2" src="http://placehold.it/40x40" alt="">
+                            <img class="float-left mr-2" src="http://placehold.it/40x40" alt="">
+                        </div>
+                        <div class="mb-2 clearfix">
+                            <img class="float-left mr-2" src="http://placehold.it/40x40" alt="">
+                            <img class="float-left mr-2" src="http://placehold.it/40x40" alt="">
+                            <img class="float-left mr-2" src="http://placehold.it/40x40" alt="">
+                            <img class="float-left mr-2" src="http://placehold.it/40x40" alt="">
+                            <img class="float-left mr-2" src="http://placehold.it/40x40" alt="">
+                        </div>
+                        <p class="text-right mr-4">invite viuew all</p>
+                    </div>
+                    <div>
+                        <p>Fan of</p>
+                        <div class="mb-2 clearfix">
+                            <img class="float-left mr-2" src="http://placehold.it/40x40" alt="">
+                            <img class="float-left mr-2" src="http://placehold.it/40x40" alt="">
+                            <img class="float-left mr-2" src="http://placehold.it/40x40" alt="">
+                            <img class="float-left mr-2" src="http://placehold.it/40x40" alt="">
+                            <img class="float-left mr-2" src="http://placehold.it/40x40" alt="">
+                        </div>
+                        <div class="mb-2 clearfix">
+                            <img class="float-left mr-2" src="http://placehold.it/40x40" alt="">
+                            <img class="float-left mr-2" src="http://placehold.it/40x40" alt="">
+                            <img class="float-left mr-2" src="http://placehold.it/40x40" alt="">
+                            <img class="float-left mr-2" src="http://placehold.it/40x40" alt="">
+                            <img class="float-left mr-2" src="http://placehold.it/40x40" alt="">
+                        </div>
+                        <div class="mb-2 clearfix">
+                            <img class="float-left mr-2" src="http://placehold.it/40x40" alt="">
+                            <img class="float-left mr-2" src="http://placehold.it/40x40" alt="">
+                            <img class="float-left mr-2" src="http://placehold.it/40x40" alt="">
+                            <img class="float-left mr-2" src="http://placehold.it/40x40" alt="">
+                            <img class="float-left mr-2" src="http://placehold.it/40x40" alt="">
+                        </div>
+                        <p class="text-right mr-4">add more viuew all</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="footer border-top border-dark">
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col">
+                    <div class="row">
+                        <div class="col">
+                            <h6>Boring stuff</h6>
+                            <ul class="list-unstyled">
+                                <li>Report</li>
+                                <li>Jobs</li>
+                                <li>For parerits</li>
+                                <li>Satety</li>
+                                <li>Terrms</li>
+                                <li>Parvacy</li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <h6>Cool stuff</h6>
+                            <ul class="list-unstyled">
+                                <li>Blog</li>
+                                <li>What's Garent Hello?</li>
+                                <li>Meet the them</li>
+                                <li>Correnact us</li>
+                                <li>Help</li>
+                                <li>API</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p>
+                                (c) 2009 ChigoCo, Inc ,All regist redprvied
+                                <br> Use of this see singnfes agreement Terms of Use
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col offset-4">
+                    <img class="float-left mr-2" src="http://placehold.it/320x230" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Coding End -->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
