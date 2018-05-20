@@ -12,10 +12,11 @@ Url: https://yuwei-bs2018-frontend.azurewebsites.net/
     * 行事曆
     * 小瑪莉
     * 預估交通費用計算
+    * 猜數字
     * 終極密碼
-    * 生命靈數
+    * 貨款金額試算
 ## Using technology
 Html、CSS、JavaScript、JQuery、BootStrap
 ## Contacts
-梁育瑋(William Liang)
+梁育瑋(William Liang)  
 h183782930@gmail.com
